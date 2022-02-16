@@ -17,14 +17,12 @@ inquirer
   .then((data) => {
     const projectName = data.name;
 
-    fs.writeFile(`${projectName}.html`, HTML.HTMLstart(projectName), (err) =>
+    fs.writeFile(`index.html`, HTML.HTMLstart(projectName), (err) =>
     err => {
         if (err) {
-          console.error(err)
-        }
-    }
-    )
-}).then(() =>
+          console.error("project start failed," + err)
+        }})})
+.then(() =>
     inquirer.prompt([
         {
             type: 'input',
@@ -46,7 +44,25 @@ inquirer
             name: 'managersOfficeNumber',
             message: 'What is your managers Office Number?',
           }
-    ])
-)
+    ]))
+.then((data) => {
+    const ManagerObj = new Manager(data.managersName, data.managersID, data.managersEmail, data.managersOfficeNumber)
 
-  
+    fs.appendFile(`index.html`, HTML.managerSection(ManagerObj), (err) =>
+    err => {
+        if (err) {
+          console.error("manager add failed, " + err)
+        }
+    })})
+    .then(() => { inquirer.prompt([
+        {
+            type: 'list',
+            message: 'Would you like to add another employee?',
+            name: 'menu',
+            choices: ['New Engineer', 'New Intern', 'Finish Building Team'],
+          },
+    ])
+
+    })
+
+
