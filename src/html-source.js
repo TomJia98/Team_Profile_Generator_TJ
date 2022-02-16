@@ -10,6 +10,7 @@ const managerSection = (Manager) => {
 return stuff
 };
 
+
 const engineerSection = (Engineer) => {
     let stuff = `<section class="Engineer">
     <h2>${Engineer.name}</h2>
@@ -21,6 +22,7 @@ const engineerSection = (Engineer) => {
 
     return stuff
     };
+
 
 const internSection = (Intern) => {
     let stuff = `<section class="Intern">
@@ -34,6 +36,7 @@ const internSection = (Intern) => {
     return stuff
 };
 
+
 const HTMLstart = (projectName) => {
     let stuff = `<!DOCTYPE html>
     <html lang="en">
@@ -41,7 +44,7 @@ const HTMLstart = (projectName) => {
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>${projectName} </title>
+        <title>${projectName}</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -49,6 +52,7 @@ const HTMLstart = (projectName) => {
 
  return stuff
 };
+
 
 const HTMLend = () => {
     let stuff = `
