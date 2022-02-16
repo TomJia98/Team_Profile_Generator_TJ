@@ -1,0 +1,31 @@
+{
+  "name": "team_profile_generator_tj",
+  "version": "1.0.0",
+  "description": "Node.js team generator",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomJia98/Team_Profile_Generator_TJ.git"
+  },
+  "keywords": [
+    "node.js",
+    "jest",
+    "javascript"
+  ],
+  "author": "Tom Jia",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/TomJia98/Team_Profile_Generator_TJ/issues"
+  },
+  "homepage": "https://github.com/TomJia98/Team_Profile_Generator_TJ#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.5.1"
+  }
+}
