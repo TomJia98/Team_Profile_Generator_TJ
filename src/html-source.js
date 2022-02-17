@@ -17,7 +17,7 @@ const engineerSection = (Engineer) => {
     <h2>Engineer</h2>
     <div>ID:${Engineer.id}</div>
     <a href="mailto:${Engineer.email}">Email:${Engineer.email}</a>
-    <div>GitHub: <a href="https://github.com/${Engineer.github}"> ${Engineer.github}<a/></div>
+    <div>GitHub: <a href="https://github.com/${Engineer.github}"> ${Engineer.github}</a></div>
     </section>`;
 
     return stuff
