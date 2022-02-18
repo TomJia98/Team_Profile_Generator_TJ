@@ -1,44 +1,58 @@
 const managerSection = (Manager) => {
-    let stuff = `<section class="Manager">
+    let stuff = `
+    
+    <section class="Manager">
     <h2>${Manager.name}</h2>
     <h2>Manager</h2>
     <div>ID:${Manager.id}</div>
     <a href="mailto:${Manager.email}">Email:${Manager.email}</a>
     <div>Office number: ${Manager.officeNumber}</div>
-    </section>`;
+    </section>
+    
+    `;
 
 return stuff
 };
 
 
 const engineerSection = (Engineer) => {
-    let stuff = `<section class="Engineer">
+    let stuff = `
+    
+    <section class="Engineer">
     <h2>${Engineer.name}</h2>
     <h2>Engineer</h2>
     <div>ID:${Engineer.id}</div>
     <a href="mailto:${Engineer.email}">Email:${Engineer.email}</a>
     <div>GitHub: <a href="https://github.com/${Engineer.github}"> ${Engineer.github}</a></div>
-    </section>`;
+    </section>
+    
+    `;
 
     return stuff
     };
 
 
 const internSection = (Intern) => {
-    let stuff = `<section class="Intern">
+    let stuff = `
+    
+    <section class="Intern">
     <h2>${Intern.name}</h2>
     <h2>Intern</h2>
     <div>ID:${Intern.id}</div>
     <a href="mailto:${Intern.email}">Email:${Intern.email}</a>
     <div>School: ${Intern.school}</div>
-    </section>`;
+    </section>
+    
+    `;
 
     return stuff
 };
 
 
 const HTMLstart = (projectName) => {
-    let stuff = `<!DOCTYPE html>
+    let stuff = `
+    
+    <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -48,6 +62,9 @@ const HTMLstart = (projectName) => {
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+    <h1>${projectName}</h1>
+
+
         `;
 
  return stuff
@@ -55,7 +72,7 @@ const HTMLstart = (projectName) => {
 
 
 const HTMLend = () => {
-    let stuff = `
+    let stuff =  `
     </body>
     </html>
     `;
