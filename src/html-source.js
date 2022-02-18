@@ -3,10 +3,10 @@ const managerSection = (Manager) => {
     
     <section class="Manager">
     <h2>${Manager.name}</h2>
-    <h2>Manager</h2>
-    <div>ID:${Manager.id}</div>
-    <a href="mailto:${Manager.email}">Email:${Manager.email}</a>
-    <div>Office number: ${Manager.officeNumber}</div>
+    <h3>Manager</h3>
+    <div class="info" >ID:${Manager.id}</div>
+    <a class="info" href="mailto:${Manager.email}">${Manager.email}</a>
+    <div class="info" >Office number: ${Manager.officeNumber}</div>
     </section>
     
     `;
@@ -20,10 +20,10 @@ const engineerSection = (Engineer) => {
     
     <section class="Engineer">
     <h2>${Engineer.name}</h2>
-    <h2>Engineer</h2>
-    <div>ID:${Engineer.id}</div>
-    <a href="mailto:${Engineer.email}">Email:${Engineer.email}</a>
-    <div>GitHub: <a href="https://github.com/${Engineer.github}"> ${Engineer.github}</a></div>
+    <h3>Engineer</h3>
+    <div class="info">ID:${Engineer.id}</div>
+    <a class="info" href="mailto:${Engineer.email}">${Engineer.email}</a>
+    <div class="info" >GitHub: <a target="_blank" href="https://github.com/${Engineer.github}"> github.com/${Engineer.github}</a></div>
     </section>
     
     `;
@@ -37,10 +37,10 @@ const internSection = (Intern) => {
     
     <section class="Intern">
     <h2>${Intern.name}</h2>
-    <h2>Intern</h2>
-    <div>ID:${Intern.id}</div>
-    <a href="mailto:${Intern.email}">Email:${Intern.email}</a>
-    <div>School: ${Intern.school}</div>
+    <h3>Intern</h3>
+    <div class="info" >ID:${Intern.id}</div>
+    <a class="info" href="mailto:${Intern.email}">${Intern.email}</a>
+    <div class="info" >School: ${Intern.school}</div>
     </section>
     
     `;
