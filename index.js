@@ -95,10 +95,6 @@ inquirer
   }
 ]);
 
-
-
-
-
 const InternSect = () => 
 inquirer
   .prompt([
@@ -139,9 +135,6 @@ inquirer
  
   }
 ]);
-
-
-
 
 
 const menuSect = () =>  inquirer.prompt([
@@ -197,8 +190,7 @@ const menuSect = () =>  inquirer.prompt([
     console.log("Your HTML has been finished!")
 
   }
-})
-;
+});
  
 
 inquirer
@@ -220,7 +212,6 @@ inquirer
         }})})
 
 
-        
 .then(managerSect)
 
 .then((data) => {//adds the manager section to the HTML, then goes to the menu section
@@ -233,6 +224,6 @@ inquirer
         }
     })})
     
-    .then(menuSect)
+.then(menuSect)
 
 
